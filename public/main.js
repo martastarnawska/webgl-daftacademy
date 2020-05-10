@@ -1,6 +1,6 @@
 import { handleCSSAnimation } from "../cssAnimation.js"
 import { handleCanvasAnimation } from "../canvasAnimation.js"
-import { handleThreeAnimation } from "../threeAnimation.js"
+import { handleThreeAnimation, handlePrevAnimation } from "../threeAnimation.js"
 import { SLIDES_COUNT } from "../utils.js"
 
 const title = document.getElementById('title')
@@ -33,5 +33,6 @@ export const prevSlide = () => {
     slideIndex--
   }
   changeSlide();
+  handlePrevAnimation()
 }
 
